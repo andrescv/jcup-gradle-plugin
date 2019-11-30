@@ -23,7 +23,7 @@ class CupTask extends DefaultTask {
 
     @InputFile
     @Optional
-    /** input directory */
+    /** java CUP input file */
     File input = project.file('src/main/jcup/parser.cup')
 
     @Input
@@ -101,10 +101,10 @@ class CupTask extends DefaultTask {
     @TaskAction
     /** Generates parser. */
     void javaCup() throws Exception {
-        // // delete old files
+        // delete old files
         project.delete(destdir)
         project.mkdir(destdir)
-        // // build args
+        // build args
         def args = []
         args << '-destdir' << destdir.absolutePath
         args << '-parser' << parser
