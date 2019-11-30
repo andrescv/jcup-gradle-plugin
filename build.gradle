@@ -2,6 +2,7 @@ plugins {
   id 'groovy'
   id 'java-gradle-plugin'
   id 'com.gradle.plugin-publish' version '0.10.1'
+  id 'com.diffplug.gradle.spotless' version '3.26.0'
 }
 
 version = '1.0'
@@ -15,6 +16,13 @@ repositories {
 
 dependencies {
   implementation 'com.github.vbmacher:java-cup:11b-20160615'
+}
+
+spotless {
+  groovy {
+    licenseHeaderFile 'gradle/spotless/HEADER'
+    paddedCell()
+  }
 }
 
 gradlePlugin {
