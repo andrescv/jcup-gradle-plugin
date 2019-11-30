@@ -87,13 +87,13 @@ Meaning of the CUP options:
 -nonterms      put non terminals in symbol constant class
 -expect #      number of conflicts expected/allowed
 -compact_red   compact tables by defaulting to most frequent reduce
--nowarn        don't warn about useless productions, etc.
--nosummary     don't print the usual summary of parse states, etc.
--nopositions   don't propagate the left and right token position values
+-nowarn        don\'t warn about useless productions, etc.
+-nosummary     don\'t print the usual summary of parse states, etc.
+-nopositions   don\'t propagate the left and right token position values
 -locations     generate handles xleft/xright for symbol positions in actions
 -xmlactions    make the generated parser yield its parse tree as XML
 -genericlabels automatically generate labels to all symbols in XML mode
--noscanner     don't refer to java_cup.runtime.Scanner
+-noscanner     don\'t refer to java_cup.runtime.Scanner
 -progress      print messages to indicate progress of the system
 -time          print time usage summary
 -dump_grammar  produce a human readable dump of the symbols and grammar
