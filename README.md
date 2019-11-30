@@ -78,25 +78,22 @@ jcup {
 
 Meaning of the CUP options:
 
-```sh
--destdir name  specify the destination directory, to store the generated files in
--parser name   specify parser class name
--typearg args  specify type arguments for parser class
--symbols name  specify name for symbol constant class
--interface     put symbols in an interface, rather than a class
--nonterms      put non terminals in symbol constant class
--expect #      number of conflicts expected/allowed
--compact_red   compact tables by defaulting to most frequent reduce
--nowarn        don\'t warn about useless productions, etc.
--nosummary     don\'t print the usual summary of parse states, etc.
--nopositions   don\'t propagate the left and right token position values
--locations     generate handles xleft/xright for symbol positions in actions
--xmlactions    make the generated parser yield its parse tree as XML
--genericlabels automatically generate labels to all symbols in XML mode
--noscanner     don\'t refer to java_cup.runtime.Scanner
--progress      print messages to indicate progress of the system
--time          print time usage summary
--dump_grammar  produce a human readable dump of the symbols and grammar
--dump_states   produce a dump of parse state machine
--dump_tables   produce a dump of the parse tables
-```
+* `-destdir name`: specify the destination directory, to store the generated files in
+* `-parser name`: specify parser class name
+* `-symbols name`: specify name for symbol constant class
+* `-interface`: put symbols in an interface, rather than a class
+* `-nonterms`: put non terminals in symbol constant class
+* `-expect #`: number of conflicts expected/allowed
+* `-compact_red`: compact tables by defaulting to most frequent reduce
+* `-nowarn`: don't warn about useless productions, etc.
+* `-nosummary`: don't print the usual summary of parse states, etc.
+* `-nopositions`: don't propagate the left and right token position values
+* `-locations`: generate handles xleft/xright for symbol positions in actions
+* `-xmlactions `: make the generated parser yield its parse tree as XML
+* `-genericlabels`: automatically generate labels to all symbols in XML mode
+* `-noscanner`: don't refer to java_cup.runtime.Scanner
+* `-progress `: print messages to indicate progress of the system
+* `-time`: print time usage summary
+* `-dump_grammar`: produce a human readable dump of the symbols and grammar
+* `-dump_states`: produce a dump of parse state machine
+* `-dump_tables`: produce a dump of the parse tables
